@@ -1,0 +1,90 @@
+.notfound-container {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #34344e);
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .emoji {
+    font-size: 5rem;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  .glitch {
+    position: relative;
+    color: #fff;
+    animation: glitch 1s infinite;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: inherit;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .glitch::before {
+    animation: glitchTop 1s infinite;
+    color: #ff00c8;
+  }
+  
+  .glitch::after {
+    animation: glitchBottom 1s infinite;
+    color: #00fff9;
+  }
+  
+  @keyframes glitchTop {
+    0% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+    10% {
+      clip: rect(0, 9999px, 20px, 0);
+      transform: translate(-5px, -3px);
+    }
+    20% {
+      clip: rect(0, 9999px, 0, 0);
+      transform: none;
+    }
+  }
+  
+  @keyframes glitchBottom {
+    0% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+    10% {
+      clip: rect(10px, 9999px, 100px, 0);
+      transform: translate(5px, 3px);
+    }
+    20% {
+      clip: rect(0, 9999px, 0, 0);
+      transform: none;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

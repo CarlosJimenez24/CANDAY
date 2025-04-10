@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "nombre": "Auriculares Inalámbricos",
+      "descripcion": "Auriculares con cancelación de ruido y batería de larga duración.",
+      "precio": 49.99,
+      "imagen": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 2,
+      "nombre": "Teclado Mecánico",
+      "descripcion": "Teclado con switches azules y retroiluminación RGB.",
+      "precio": 89.99,
+      "imagen": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 3,
+      "nombre": "Mouse Gamer",
+      "descripcion": "Mouse ergonómico con 6 botones y DPI ajustable.",
+      "precio": 39.99,
+      "imagen": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 4,
+      "nombre": "Monitor 24''",
+      "descripcion": "Monitor Full HD con tasa de refresco de 75Hz.",
+      "precio": 159.99,
+      "imagen": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 5,
+      "nombre": "Webcam HD",
+      "descripcion": "Cámara web con micrófono incorporado y resolución 1080p.",
+      "precio": 29.99,
+      "imagen": "https://via.placeholder.com/200"
+    }
+  ]
+  

@@ -9,6 +9,8 @@ import { Top5Component } from "./components/top5/top5.component";
 import { RegisterComponent } from "./components/register/register.component";
 import { FormulariopagoComponent } from "./components/formulariopago/formulariopago.component";
 import { NotfoundComponent } from "./components/notfound/notfound.component";
+import { DetalleProductoComponent } from "./components/detalle-producto/detalle-producto.component";
+import { CatalogoProductosComponent } from "./components/catalogo-productos/catalogo-productos.component";
 
 
 
@@ -21,6 +23,8 @@ export const routes: Routes = [
     { path: 'productos', component: ProductosComponent},
     { path: 'top5', component: Top5Component},
     { path: 'formulariopago', component: FormulariopagoComponent},
+    { path: 'catalogo', component: CatalogoProductosComponent },
+    { path: 'detalle/:id', component: DetalleProductoComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: '**', component: NotfoundComponent }
 ];

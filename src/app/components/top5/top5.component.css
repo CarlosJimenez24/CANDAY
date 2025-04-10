@@ -1,10 +1,66 @@
+body {
+  background-color: #ffe4f0; 
+  color: #6b0d5e; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-.price {
-    font-size: 1.8rem;
-    font-weight: bold;
+h1, h2, h3, h4, h5, h6 {
+  color: #d0006f;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #ffb6c1;
+}
+
+.btn-primary {
+  background-color: #ff69b4;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #e055a4;
+}
+
+.btn-light {
+  color: #d0006f;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.05rem;
+}
+
+.carousel-inner img {
+  height: 250px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+}
+
+.badge {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote p {
+  font-style: italic;
+  color: #a0005e;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px #f8c6de;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .btn-red {
-    background-color: #dc3545;
-    color: white;
-    font-weight: bold;
-  }
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }

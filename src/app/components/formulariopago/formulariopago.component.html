@@ -2,42 +2,48 @@
     <main>  
       <div class="py-2 text-center">
         <img class="d-block mx-auto mb-2 rounded-4" src="/assets/img/monedaChocolate.png" alt="" width="85" height="85">
-        <h1 class="h2">Metodos de pago</h1>
         <p class="lead"></p>
       </div>
   
       <div class="row g-5">
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Total (EUR)</span>
-          <strong>{{ total }}</strong>
-        </li>
         
         <!-- Aquí listamos los productos del carrito 👇 -->
-        <div class="mt-4">
-          <h5>Productos en tu carrito:</h5>
-          <ul class="list-group">
-            <li *ngFor="let producto of productos" class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <strong>{{ producto.nombre }}</strong>
-                  <p class="mb-0">{{ producto.descripcion }}</p>
-                </div>
-                <span>{{ producto.precio }}</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <h4 class="mt-4">Productos en tu carrito:</h4>
+
+        <ul class="list-group mb-3" *ngIf="productos.length > 0; else sinProductos">
+          <li *ngFor="let producto of productos; let i = index" class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{{ producto.nombre }}</h6>
+              <small class="text-body-secondary">{{ producto.descripcion }}</small>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="text-body-secondary">{{ producto.precio | currency:'EUR' }}</span>
+              <button class="btn btn-sm btn-outline-danger" (click)="eliminarProducto(i)">Eliminar</button>
+            </div>
+          </li>
+          
+
+          <li class="list-group-item d-flex justify-content-between">
+          <strong>Total</strong>
+          <strong>{{ total | currency:'EUR' }}</strong>
+          </li>
+        </ul>
+
+        <ng-template #sinProductos>
+          <p>No hay productos en tu carrito.</p>
+        </ng-template>
+
         
         
         <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Billing address</h4>
+          <h4 class="mb-3">Metodos de pago:</h4>
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <div class="col-sm-6">
-                <label for="firstName" class="form-label">First name</label>
+                <label for="firstName" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                 <div class="invalid-feedback">
-                  Valid first name is required.
+                  El nombre tiene que ser válido.
                 </div>
               </div>
   

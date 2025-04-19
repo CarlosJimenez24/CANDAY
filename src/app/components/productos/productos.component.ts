@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarritoService } from '../../services/carrito.service';
 import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -43,9 +44,10 @@ export class ProductosComponent {
       },
       
   ];
-  constructor(private carritoService: CarritoService) {}
+  constructor(private carritoService: CarritoService, private router: Router) {}
 
   agregarAlCarrito(producto: any) {
     this.carritoService.agregarProducto(producto);
+    this.router.navigate(['/formulariopago']);
   }
 }

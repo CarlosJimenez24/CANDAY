@@ -20,4 +20,11 @@ export class FormulariopagoComponent implements OnInit {
     this.total = this.carritoService.obtenerTotal();
     console.log('Productos cargados en el carrito:', this.productos);
   }
+  
+  eliminarProducto(index: number) {
+    this.carritoService.eliminarProducto(index);
+    this.productos = this.carritoService.obtenerProductos();
+    this.total = this.carritoService.obtenerTotal();
+  }
+  
 } 

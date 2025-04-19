@@ -10,10 +10,11 @@
       <p>{{ producto.descripcion }}</p>
       <p class="price">{{ producto.precio | currency:'EUR' }}</p>
       <p class="text-muted small">(IVA Incluido)</p>
-      <a href="./formulariopago" class="btn btn-danger rounded-pill px-4 py-2">
+      <a (click)="agregarAlCarrito(producto)" [routerLink]="['/formulariopago']" class="btn btn-danger rounded-pill px-4 py-2">
         <strong>Comprar</strong>
       </a>
     </div>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+

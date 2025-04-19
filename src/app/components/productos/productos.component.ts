@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarritoService } from '../../services/carrito.service';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
-  selector: 'app-productos',
+  selector: 'app-productos',  
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
@@ -40,4 +43,9 @@ export class ProductosComponent {
       },
       
   ];
+  constructor(private carritoService: CarritoService) {}
+
+  agregarAlCarrito(producto: any) {
+    this.carritoService.agregarProducto(producto);
+  }
 }

@@ -1,59 +1,28 @@
 <div class="container">
-    <main>
+    <main>  
       <div class="py-2 text-center">
-        <img class="d-block mx-auto mb-2 rounded-4" src="/img/monedaChocolate.png" alt="" width="85" height="85">
+        <img class="d-block mx-auto mb-2 rounded-4" src="/assets/img/monedaChocolate.png" alt="" width="85" height="85">
         <h1 class="h2">Metodos de pago</h1>
         <p class="lead"></p>
       </div>
   
       <div class="row g-5">
-        <div class="col-md-5 col-lg-4 order-md-last">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Carrito</span>
-            <span class="badge bg-primary rounded-pill">3</span>
-          </h4>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Second product</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Third item</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
-              <div class="text-success">
-                <h6 class="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
-              </div>
-              <span class="text-success">−$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$20</strong>
-            </li>
-          </ul>
-  
-          <form class="card p-2">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
-              <button type="submit" class="btn btn-secondary">Redeem</button>
+        <ul class="list-group mb-3">
+          <li *ngFor="let producto of productos" class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{{ producto.nombre }}</h6>
+              <small class="text-body-secondary">{{ producto.descripcion }}</small>
+              <img [src]="producto.imagen" width="50" class="me-2 rounded" />
             </div>
-          </form>
-        </div>
+            <span class="text-body-secondary">{{ producto.precio }}</span>
+          </li>
+        
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+            <strong>{{ total }}</strong>
+          </li>
+        </ul>
+        
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Billing address</h4>
           <form class="needs-validation" novalidate="">

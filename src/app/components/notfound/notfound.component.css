@@ -1,6 +1,6 @@
 .notfound-container {
     height: 100vh;
-    background: linear-gradient(135deg, #1e1e2f, #34344e);
+    background: linear-gradient(135deg, #e0e0ec, #34344e);
     color: #fff;
     animation: fadeIn 1s ease-in-out;
   }

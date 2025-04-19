@@ -1,0 +1,52 @@
+body {
+    background-color: #ffe4f0; /* fondo rosa clarito pastel */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: fadeIn 1.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .modal-content {
+    background-color: #becaff; /* azul clarito tipo chuche */
+    border: none;
+  }
+
+  .modal-header h1 {
+    color: #d0006f;
+  }
+
+  .form-control {
+    background-color: #f1f9ff !important;
+    border: 2px solid #ffc0cb;
+  }
+
+  .form-control:focus {
+    border-color: #d0006f;
+    box-shadow: 0 0 10px #ff69b4;
+  }
+
+  .btn-primary {
+    background-color: #ff69b4;
+    border: none;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #e055a4;
+  }
+
+  .text-body-secondary {
+    color: #6b0d5e !important;
+  }
+
+  small a {
+    color: #ff69b4;
+    text-decoration: underline;
+  }
+
+  hr {
+    border-top: 2px dashed #d0006f;
+  }

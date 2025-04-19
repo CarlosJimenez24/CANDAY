@@ -1,0 +1,45 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #d0006f;
+  }
+
+  p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #6b0d5e;
+  }
+
+  .btn-primary {
+    background-color: #ff69b4;
+    border: none;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #e055a4;
+  }
+
+  .btn-light {
+    color: #d0006f;
+    font-weight: bold;
+  }
+
+  .bg-secondary {
+    background-color: #becaff !important;
+  }
+
+  .bg-light {
+    background-color: #ffe4f0 !important;
+  }

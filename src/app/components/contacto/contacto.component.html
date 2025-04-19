@@ -1,30 +1,48 @@
-<div class="col-md-6">
-    <h2 class="text-light">Nuestros contactos</h2>
-    <p>Si tienes dudas, contacta con nosotros</p>
-    <ul class="list-unstyled ps-0">
-      <li>
-        <a class="icon-link mb-1" href="" rel="noopener" target="_blank">
-          <svg class="bi" width="16" height="16" aria-hidden="true"><use xlink:href="#arrow-right-circle"></use></svg>
-          Telefono: +32 629 236 128
-        </a>
-      </li>
-      <li>
-        <a class="icon-link mb-1" href="" rel="noopener" target="_blank">
-          <svg class="bi" width="16" height="16" aria-hidden="true"><use xlink:href="#arrow-right-circle"></use></svg>
-          Gmail: canday&#64;gmail.com
-        </a>
-      </li>
-      <li>
-        <a class="icon-link mb-1" href="" rel="noopener" target="_blank">
-          <svg class="bi" width="16" height="16" aria-hidden="true"><use xlink:href="#arrow-right-circle"></use></svg>
-          Instagram: &#64;canday
-        </a>
-      </li>
-      <li>
-        <a class="icon-link mb-1" href="" rel="noopener" target="_blank">
-          <svg class="bi" width="16" height="16" aria-hidden="true"><use xlink:href="#arrow-right-circle"></use></svg>
-          facebook: &#64;canday
-        </a>
-      </li>
-    </ul>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+
+  <!-- ENCABEZADO -->
+  <div class="text-center p-3 bg-secondary text-white rounded shadow mb-5 fade-in">
+    <h1 class="fw-bold">Contacto 📬</h1>
+    <p class="lead"><strong>¿Dudas, sugerencias o simplemente quieres saludarnos? ¡Escríbenos!</strong></p>
+    <p><strong>Instagram: &#64;canday</strong></p>
+    <p><strong>FaceBook: &#64;canday</strong></p>
   </div>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <div class="row justify-content-center mb-5 fade-in">
+    <div class="col-md-8">
+      <form class="p-4 bg-formulario rounded shadow">
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-bold text-danger">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre aquí">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold text-danger">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label fw-bold text-danger">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos qué tienes en mente..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100 mt-3">Enviar Mensaje 💌</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DECORACIÓN CON IMÁGENES -->
+  <div class="row text-center fade-in">
+    <div class="col-md-4 mb-4">
+      <img src="/assets/img/corazonChuche.jpg" class="img-fluid" style="max-width: 150px;" alt="Osito decorativo">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="/assets/img/ositodepeluche.webp" class="img-fluid" style="max-width: 150px;" alt="Corazón decorativo">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="assets/img/piruleta.webp" class="img-fluid" style="max-width: 150px;" alt="Piruleta decorativa">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

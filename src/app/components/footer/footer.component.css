@@ -1,0 +1,23 @@
+
+.footer-canday {
+    background-color: #becaff;
+    border-top: 5px solid #ffc0cb;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 0 -5px 20px rgba(255, 192, 203, 0.3);
+  }
+  
+  .footer-canday h5 {
+    font-weight: bold;
+    color: #d0006f;
+  }
+  .footer-canday a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  .footer-canday a:hover {
+    color: #ff69b4 !important;
+  }
+  .footer-canday .bi {
+    font-size: 1.5rem;
+  }
+  

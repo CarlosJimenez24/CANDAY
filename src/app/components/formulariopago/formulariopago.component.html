@@ -7,21 +7,27 @@
       </div>
   
       <div class="row g-5">
-        <ul class="list-group mb-3">
-          <li *ngFor="let producto of productos" class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">{{ producto.nombre }}</h6>
-              <small class="text-body-secondary">{{ producto.descripcion }}</small>
-              <img [src]="producto.imagen" width="50" class="me-2 rounded" />
-            </div>
-            <span class="text-body-secondary">{{ producto.precio }}</span>
-          </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (EUR)</span>
+          <strong>{{ total }}</strong>
+        </li>
         
-          <li class="list-group-item d-flex justify-content-between">
-            <span>Total</span>
-            <strong>{{ total }}</strong>
-          </li>
-        </ul>
+        <!-- Aquí listamos los productos del carrito 👇 -->
+        <div class="mt-4">
+          <h5>Productos en tu carrito:</h5>
+          <ul class="list-group">
+            <li *ngFor="let producto of productos" class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>{{ producto.nombre }}</strong>
+                  <p class="mb-0">{{ producto.descripcion }}</p>
+                </div>
+                <span>{{ producto.precio }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
         
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Billing address</h4>

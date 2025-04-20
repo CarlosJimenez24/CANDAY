@@ -26,21 +26,21 @@ export class ProductosComponent {
         "nombre": "Paleta de Caramelo",
         "descripcion": "Paleta redonda de sabores surtidos.",
         "precio": 15.50,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UwRaZXxhwZ3tGaSK3P1TfW1uWwx1p5iNrA&s"
+        "imagen": "/assets/img/CHUCHE1.jpg"
       },
       {
         "id": 3,
         "nombre": "Chicles de Frutas",
         "descripcion": "Chicles con sabores tropicales.",
         "precio": 14.75,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UwRaZXxhwZ3tGaSK3P1TfW1uWwx1p5iNrA&s"
+        "imagen": "/assets/img/CHUCHE2.jpg"
       },
       {
         "id": 4,
-        "nombre": "Barra de Chocolate",
-        "descripcion": "Chocolate con leche relleno.",
+        "nombre": "Mix de chuches",
+        "descripcion": "Chuche party",
         "precio": 13.20,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UwRaZXxhwZ3tGaSK3P1TfW1uWwx1p5iNrA&s"
+        "imagen": "/assets/img/CHUCHE3.jpg"
       },
       
   ];

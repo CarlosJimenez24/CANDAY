@@ -1,0 +1,69 @@
+body {
+    background-color: #ffe4f0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #6b0d5e;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1, h2, h3, h4, label {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #d0006f;
+  }
+  
+  .btn-primary {
+    background-color: #ff69b4;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e055a4;
+  }
+  
+  .bg-secondary {
+    background-color: #ffcce0 !important;
+  }
+  
+  .bg-formulario {
+    background-color: #1031c2 !important;
+  }
+  
+  input, textarea, select {
+    border: 2px solid #ffb6c1;
+    background-color: #fff0f7;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #87cefa;
+    box-shadow: 0 0 5px #87cefa;
+  }
+  
+  .input-group-text {
+    background-color: #ffd0e3;
+    color: #6b0d5e;
+    border: 1px solid #ffb3cf;
+  }
+  
+  .form-check-label {
+    color: #6b0d5e;
+  }
+  
+  .list-group-item {
+    background-color: #ffe6f1;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  

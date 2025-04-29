@@ -17,32 +17,66 @@ export class ProductosComponent {
       {
         "id": 1,
         "nombre": "Gomitas de Osito",
-        "descripcion": "Gomitas dulces con sabor a frutas.",
+        "descripcion": "Gomitas dulces con sabor a frutas surtidas.",
         "precio": 13.50,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UwRaZXxhwZ3tGaSK3P1TfW1uWwx1p5iNrA&s"
+        "imagen": "assets/img/ositosharibo.jpg"
       },
       {
         "id": 2,
-        "nombre": "Paleta de Caramelo",
-        "descripcion": "Paleta redonda de sabores surtidos.",
+        "nombre": "Piruleta",
+        "descripcion": "Paleta redonda de sabores surtidos: fresa, cola y naranja.",
         "precio": 15.50,
-        "imagen": "/assets/img/CHUCHE1.jpg"
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97lEgoRcm4umJv-XaN4SZcHC3KsufweMokA&s"
       },
       {
         "id": 3,
         "nombre": "Chicles de Frutas",
-        "descripcion": "Chicles con sabores tropicales.",
+        "descripcion": "Chicles con sabores intensos a frutas tropicales.",
         "precio": 14.75,
-        "imagen": "/assets/img/CHUCHE2.jpg"
+        "imagen": "assets/img/bolsadefrutas.png"
       },
       {
         "id": 4,
-        "nombre": "Mix de chuches",
-        "descripcion": "Chuche party",
+        "nombre": "Barra de Chocolate",
+        "descripcion": "Chocolate con leche relleno de crema de avellanas.",
         "precio": 13.20,
-        "imagen": "/assets/img/CHUCHE3.jpg"
+        "imagen": "assets/img/chocolatemilka.jpg"
       },
-      
+      {
+        "id": 5,
+        "nombre": "Regaliz Rojo",
+        "descripcion": "Tiras de regaliz con sabor a fresa.",
+        "precio": 13.90,
+        "imagen": "assets/img/regalizRoja.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "Peta Zetas",
+        "descripcion": "Caramelos efervescentes que estallan en la boca.",
+        "precio": 14.00,
+        "imagen": "assets/img/petazeta.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "Nubes de Azúcar",
+        "descripcion": "Suaves y esponjosas nubes con sabor a vainilla.",
+        "precio": 16.10,
+        "imagen": "assets/img/nubes.jfif"
+      },
+      {
+        "id": 8,
+        "nombre": "Huevitos de Chocolate",
+        "descripcion": "Huevitos crujientes rellenos de crema de cacao.",
+        "precio": 18.30,
+        "imagen": "assets/img/HuevosChocolates.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "Gusanitos Ácidos",
+        "descripcion": "Gomitas en forma de gusano con cobertura ácida.",
+        "precio": 12.40,
+        "imagen": "assets/img/gusanitos.jpg"
+      },
   ];
   constructor(private carritoService: CarritoService, private router: Router) {}
 

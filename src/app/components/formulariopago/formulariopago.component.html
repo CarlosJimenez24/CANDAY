@@ -95,3 +95,36 @@
             <label class="form-check-label" for="credit">Tarjeta de crédito</label>
           </div>
           <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="debit">Tarjeta de débito</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label class="form-label fw-bold text-danger">Nombre en la tarjeta</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-bold text-danger">Número de la tarjeta</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold text-danger">Caducidad</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold text-danger">CVV</label>
+            <input type="text" class="form-control" required>
+          </div>
+        </div>
+
+        <button class="btn bg-white btn-lg w-100 mt-4" type="submit">COMPRAR 🍭</button>
+      </form>
+    </div>
+  </div>
+</div>
